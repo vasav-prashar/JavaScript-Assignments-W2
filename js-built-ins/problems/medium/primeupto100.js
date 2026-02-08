@@ -16,6 +16,20 @@
 */
 
 function getPrimesUpTo100() {
+  let ans = [];
+  for (let num = 2; num <= 100; num++) {
+    let isPrime = true;
+    for (let i = 2; i <= num / 2; i++) {
+      if (num % i === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    if (isPrime) {
+      ans.push(num);
+    }
+  }
+  return ans;
   // Your code here
 }
 

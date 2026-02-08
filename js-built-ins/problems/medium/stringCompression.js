@@ -21,6 +21,22 @@
   - `npm run test-compressString`
 */
 function compression(str) {
+  // let map = {};
+  // for (let i = 0; i < str.length; i++) {
+  //   if (map[str[i]] !== undefined) {
+  //     map[str[i]]++;
+  //   } else {
+  //     map[str[i]] = 1;
+  //   }
+  // }
+  // let ans = "";
+  // Object.keys(map).forEach(([key, value]) => {
+  //   if (value === 1) ans += key;
+  //   else{
+  //     ans=ans+key+value
+  //   }
+  // });
+  // return ans;
   // Your code here
 }
 

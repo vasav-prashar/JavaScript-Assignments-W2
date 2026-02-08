@@ -22,6 +22,17 @@
 */
 
 function reverseInteger(num) {
+  let ans = 0;
+  const sign = num < 0 ? -1 : 1;
+  if (num == 0) return 0;
+  num = Math.abs(num);
+  while (num > 0) {
+    let rem = num % 10;
+    ans = ans * 10 + rem;
+     num = Math.floor(num / 10);
+  }
+  return ans*sign;
+
   // Your code here
 }
 
