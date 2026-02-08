@@ -19,6 +19,7 @@
 */
 
 function getUniqueElements(arr) {
+  return [...new Set(arr)]
   // Your code here
 }
 
