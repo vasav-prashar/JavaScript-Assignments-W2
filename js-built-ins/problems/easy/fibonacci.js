@@ -39,11 +39,33 @@
 
 // Iterative Fibonacci function
 function fibonacci(n) {
-  // Your code here
+  let arr = [];
+
+  if (n === 0) return [];
+  if (n === 1) return [0];
+
+  let first = 0,
+      second = 1;
+
+  arr.push(first);
+  arr.push(second);
+
+  for (let i = 0; i < n - 2; i++) {
+    let sum = first + second;
+    arr.push(sum);
+    first = second;
+    second = sum;
+  }
+
+  return arr;
 }
 
 // Recursive Fibonacci function
 function fibonacciRecursive(n) {
+  if(n==0) return 0;
+  if(n==1) return 1;
+  
+  return fibonacciRecursive(n-1)+fibonacciRecursive(n-2);
   // Your code here
 }
 

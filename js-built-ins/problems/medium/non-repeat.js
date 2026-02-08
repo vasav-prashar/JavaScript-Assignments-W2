@@ -21,6 +21,19 @@
   - `npm run test-nonrepeat`
 */
 function nonrepeat(str) {
+  let res = {};
+  for (let i = 0; i < str.length; i++) {
+    if (res[str[i]] !== undefined) {
+      res[str[i]]++;
+    } else {
+      res[str[i]] = 1;
+    }
+  }
+  for (let i = 0; i < str.length; i++) {
+    if (res[str[i]] == 1) return str[i];
+  }
+  return null;
+
   // Your code here
 }
 module.exports = nonrepeat;

@@ -19,6 +19,17 @@
 */
 
 function reverseString(str) {
+  let i = 0,
+    j = str.length - 1;
+
+    let ans=""
+
+    while(i<str.length){
+      ans+=str[j];
+      j--;
+      i++;
+    }
+    return ans;
   // Your code here
 }
 
